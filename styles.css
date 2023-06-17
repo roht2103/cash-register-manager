@@ -13,6 +13,15 @@
     height: 100vh;
     width: 40vw;
     background-color: rgb(118, 105, 134);
-    display: flex;
+    display: block;
     justify-content: center;
+}
+.heading{
+    color: white;
+    margin:1rem 0rem;
+    text-align: center;
+}
+.description{
+    font-size: 1.3rem;
+    margin: 0rem 2rem;
 }
