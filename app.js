@@ -13,7 +13,7 @@ btn.addEventListener("click", function () {
 });
 
 function validateData() {
-  if (billAmount.value > 0) {
+  if (billAmount.value < 0) {
     if (cashGiven.value >= billAmount) {
       let amountToBeReturned = cashGiven.value - billAmount.value;
       returnAmount.style.display = "block";
