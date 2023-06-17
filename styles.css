@@ -64,6 +64,10 @@ table{
     border-collapse: collapse;
 }
 
+td{
+    color: rgb(255, 255, 255);
+}
+
 .table-data{
     width: 4rem;
     height: 3.5rem;
