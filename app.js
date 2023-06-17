@@ -14,9 +14,6 @@ btn.addEventListener("click", function () {
 
 function validateData() {
 
-    if(billAmount.value=null || cashGiven.value=null){
-        alert("please provide credentials")
-    }
 
   if ((cashGiven.value - billAmount.value)>0) {
     if (cashGiven.value <= 0 || billAmount.value < 0) {
