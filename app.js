@@ -1,6 +1,7 @@
 let billAmount = document.querySelector("#bill-amount");
 let cashGiven = document.querySelector("#cash-given");
 const btn = document.querySelector("#checkBtn");
+const returnAmount=document.querySelector("#returnAmount");
 
 btn.addEventListener("click", function () {  
 
@@ -23,6 +24,7 @@ function validateData(){
         // else change will be calculated by calling calculateChange() function
 
         let amountToBeReturned=cashGiven.value-billAmount.value;
+        returnAmount.innerText ="Amount to be returned : "+amountToBeReturned;
         calculateChange(amountToBeReturned);
     }
 }
