@@ -60,6 +60,7 @@ body {
     /* color: white; */
     text-align: center;
     margin: 0rem 2rem 2rem 2rem;
+    border-bottom: 1px dotted black;
 }
 
 label {
@@ -88,6 +89,7 @@ button {
 table {
     margin: 1rem;
     border-collapse: collapse;
+    background-color: rgba(131, 130, 130, 0.5);
 }
 
 
