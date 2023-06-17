@@ -13,11 +13,15 @@ btn.addEventListener("click", function () {
 });
 
 function validateData() {
-  if (billAmount.value <= cashGiven.value) {
-    let amountToBeReturned = cashGiven.value - billAmount.value;
-    returnAmount.style.display = "block";
-    returnAmount.innerText = "Amount to be returned : " + amountToBeReturned;
-    calculateChange(amountToBeReturned);
+  if (billAmount.value > 0) {
+    if ((cashGiven.value-billAmount.value)<0) {
+      alert("cash given should be greater than bill amount");
+    } else {
+      let amountToBeReturned = cashGiven.value - billAmount.value;
+      returnAmount.style.display = "block";
+      returnAmount.innerText = "Amount to be returned : " + amountToBeReturned;
+      calculateChange(amountToBeReturned);
+    }
   } else {
     alert("Invalid bill amount");
   }
