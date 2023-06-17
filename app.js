@@ -2,8 +2,10 @@ let billAmount = document.querySelector("#bill-amount");
 let cashGiven = document.querySelector("#cash-given");
 const btn = document.querySelector("#checkBtn");
 const returnAmount = document.querySelector("#returnAmount");
+const noOfNotes=document.querySelectorAll(".no-of-notes");
 returnAmount.style.display = "none";
 
+const availableNotes=[2000,500,100,20,10,5,1]
 
 btn.addEventListener("click", function () {
   // validateData() function will be called when button will be clicked
@@ -28,5 +30,5 @@ function validateData() {
 }
 
 function calculateChange(amountToBeReturned) {
-  console.log(amountToBeReturned);
+    for(let i=0;i<)
 }
