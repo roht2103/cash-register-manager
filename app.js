@@ -20,7 +20,7 @@ function validateData() {
       returnAmount.innerText = "Amount to be returned : " + amountToBeReturned;
       calculateChange(amountToBeReturned);
     }else{
-        alert("do you wanna wash plates");
+        alert("cash given should be greater than bill amount");
     }
   }else{
     alert("Invalid bill amount");
