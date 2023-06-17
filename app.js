@@ -13,21 +13,17 @@ btn.addEventListener("click", function () {
 });
 
 function validateData() {
-
-
-  if ((cashGiven.value - billAmount.value)>0) {
-    if (cashGiven.value <= 0 || billAmount.value < 0) {
-      alert("invalid credential");
-    } else {
-      // else change will be calculated by calling calculateChange() function
-
+  if (billAmount.value > 0) {
+    if (cashGiven.value >= billAmount) {
       let amountToBeReturned = cashGiven.value - billAmount.value;
       returnAmount.style.display = "block";
       returnAmount.innerText = "Amount to be returned : " + amountToBeReturned;
       calculateChange(amountToBeReturned);
+    }else{
+        alert("do you wanna wash plates");
     }
-  } else {
-    alert("cash given should be greater than bill amount");
+  }else{
+    alert("Invalid bill amount");
   }
 }
 
