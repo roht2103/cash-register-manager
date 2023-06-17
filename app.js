@@ -3,6 +3,8 @@ let cashGiven = document.querySelector("#cash-given");
 const btn = document.querySelector("#checkBtn");
 const returnAmount = document.querySelector("#returnAmount");
 returnAmount.style.display = "none";
+
+
 btn.addEventListener("click", function () {
   // validateData() function will be called when button will be clicked
   validateData();

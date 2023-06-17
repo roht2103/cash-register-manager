@@ -56,6 +56,7 @@ button{
     border-radius: 0.3rem;
     background-color: rgb(164, 116, 222);
     color: white;
+    cursor: pointer;
 }
 
 table{
