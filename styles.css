@@ -1,47 +1,73 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-image: url("bg.jpg");
+    background-color: #cccccc;
+    height: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
+/* .hero-img {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("bg.jpg");
+    background-color: #cccccc;
+    /* height: 500px; */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} */ 
 
-.main-div{
+
+.main-div {
     height: 100%;
     width: 50vw;
-    background-color: rgb(118, 105, 134);
-    display: flex ;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(220,220,220,0.5);
+    /* background: transparent; */
+    display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
     /* align-content: center; */
 }
 
-.heading{
+.heading {
     font-size: 3rem;
-    color: white;
+    /* color: white; */
     margin: 2rem 0rem;
     text-align: center;
 }
 
-.description{
+.description {
     font-size: 1.5rem;
-    color: white;
+    /* color: white; */
     text-align: center;
     margin: 0rem 2rem 2rem 2rem;
 }
 
-label{
-    color: white;
+label {
+    /* color: white; */
     font-size: 1.7rem;
 }
 
-input{
+input {
     height: 2.5rem;
     width: 90%;
     border-radius: 0.5rem;
@@ -50,7 +76,7 @@ input{
     padding: 0rem 1rem;
 }
 
-button{
+button {
     margin: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 0.3rem;
@@ -59,22 +85,20 @@ button{
     cursor: pointer;
 }
 
-table{
+table {
     margin: 1rem;
     border-collapse: collapse;
 }
 
-td{
-    color: rgb(255, 255, 255);
-}
 
-.table-data{
+
+.table-data {
     width: 4rem;
     height: 3.5rem;
     text-align: center;
 }
 
-#returnAmount{
-    margin:1rem;
+#returnAmount {
+    margin: 1rem;
     font-size: 1.3rem;
 }
